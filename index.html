@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title> AITU ムジク </title>
+    <link rel="stylesheet" href="style/mainStyle.css" type="text/css">
+    <link rel="stylesheet" href="style/scrollBAR.css" type="text/css">
+    <link rel="stylesheet" href="style/cssFonts/fontConsolas.css" type="text/css">
+    <link rel="icon" href="favicon/aboutPAGE.png" type="image/png">
+    <script type="text/javascript" src="script/currentTime.js"> </script>
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        h1, h2, h3 {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        .underMENU {
+            transition: all 500ms ease !important;
+        }
+
+        @media screen and (max-width: 591px) {
+            .headSubMENU {  /* SCROLLING TEXT */
+                float: none;
+                margin-top: 98px;
+            }
+        }
+
+        @media screen and (max-width: 1535px) {
+            .lol { display: none !important; }
+        }
+
+        @media screen and (max-width: 950px) {
+            h1 {
+                font-size: x-large;
+            }
+
+            h2 {
+                font-size: large;
+            }
+
+            .underMENU {
+                margin-right: 0px !important;
+
+                -webkit-transform: scale(0.7);
+                -moz-transform: scale(0.7);
+                transform: scale(0.7);
+            }
+
+            .button01 {
+                margin-left: 125px !important;
+            }
+
+            .button02 {
+                margin-left: -125px !important;
+            }
+        }
+
+        @media screen and (max-width: 671px) {
+            .headSubMENU {  /* SCROLLING TEXT */
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 412px) {
+            .centerDIV {
+                position: fixed !important;
+                display: block;
+                margin-top: 0% !important;
+                left: 0% !important; right: 95% !important;
+            }
+
+            .titleTXT {
+                margin-right: 25px !important;
+            }
+
+            .button01 {
+                position: relative !important;
+                margin-top: 10% !important;
+                left: 200% !important; right: 0% !important;
+            }
+
+            .button02 {
+                position: relative !important;
+                display: block !important;
+                margin-top: -50px !important;
+                left: 200% !important; right: 0% !important;
+            }
+
+            @media screen and (max-width: 320px) {
+                h1 {
+                    font-size: 22px !important;
+                }
+                
+                h2 {
+                    font-size: 14px !important;
+                }
+
+                .button01 {
+                    position: relative !important;
+                    margin-top: 10% !important;
+                    left: 155% !important; right: 0% !important;
+                }
+
+                .button02 {
+                    position: relative !important;
+                    display: block !important;
+                    margin-top: -50px !important;
+                    left: 175% !important; right: 0% !important;
+                }
+            }
+        }
+
+        .centerDIV {
+            position: absolute;
+            top: 40%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+
+            margin: auto;
+        }
+    </style>
+</head>
+
+<audioFiles>
+    <audio id="audioWARN01" src="media/audio/sfx/warning.wav"> </audio>
+    <audio id="audioERR01" src="media/audio/sfx/error.wav"> </audio>
+</audioFiles>
+
+<body>
+    <div class="headMENU">
+        <a href="" class="logo"> <img src="imgs/aitumusic.png" alt="[9] certifiedBAKA" width="200px" height="35px" title="AITU ムジク"> </a>
+        <div class="headMENU-R headMENUalt">
+            <a href="" title=">> homePage"> Library </a>
+            <a href="" title=">> funSTUFF"> Artists </a>
+            <a class="active" href="javascript:alert('[ i ]  you are currently on this subpage !!')" title="[ i ] you are here"> Browse </a>
+        </div>
+        <div class="headSubMENU" title="[ i ] liveSTATUS">
+            <div class="headSubMENU headSubMenuGRAD">
+                <p id="headMENUtime" class="headMENUtime"> [dateTime] </p>
+                <p class="headMENUarrow"> &lt;&lt; Browse -- </span> </p>
+                <p class="headSubTXTscroll01" style="opacity: 0%;"> Listen new music in our website!!! </p>
+                <p class="headSubTXTscroll02" style="float: left; opacity: 0%;"> AITU is the best university </p>
+                <p class="headSubTXTscroll03" style="float: left; opacity: 0%;"> Put 100% </p>
+                <p class="headSubTXTscroll04INF" style="float: left; opacity: 0%;">
+                    AITU moment
+                    AITU moment
+                    AITU moment
+                    AITU moment
+                    AITU moment
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="postsBOX" style="margin-top: 70px; opacity: 0;">
+        <div class="textBORDER" style="float:left"></div>
+    </div>
+    <div class="borderLINE" style="float: left; height: 75%;"> </div>
+    <p class="paragraphMARGIN" style="padding-top: 15px; padding-left: 15px;"></p>
+    <span class="mediaPOST" style="margin-bottom: -50px"> <br>
+        <h1>Browse</h1>
+        <a href="https://music.apple.com/library/albums/l.xQJDrn6"> 
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/da/8b/77/da8b7731-6f4f-eacf-5e74-8b23389eefa1/20UMGIM03371.rgb.jpg/1200x1200bb.jpg" class="mediaROUNDED" style="vertical-align: top; object-position: 50% 25%; width: 250px; height: 250px;">
+        </a> 
+        <p class="lol" style="position:absolute; margin-left: 194px;">Dreamland</p>
+        <p class="lol" style="position:absolute; margin-top: 20px; margin-left: 190px;"><strong>Heat waves</strong></p>
+        <a href="https://music.apple.com/kz/album/metamorphosis-single/1610017668"> 
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/Music116/v4/f8/11/27/f8112775-b320-2f77-b5de-a2d2139c0237/689690360221.jpg/600x600bf-60.jpg" class="mediaROUNDED" style="vertical-align: top; object-position: 50% 25%; width: 250px; height: 250px;">
+        </a> 
+        <p class="lol" style="position:absolute; margin-left: 460px;">Interworld</p>
+        <p class="lol" style="position:absolute; margin-top: 20px; margin-left: 448px;"><strong>Metamorphosis</strong></p>
+        <a href="https://music.apple.com/library/albums/l.zSwcIZ8"> 
+            <img src="https://is5-ssl.mzstatic.com/image/thumb/Music122/v4/42/a3/cc/42a3cc35-fdb7-2ae7-02f3-e5a90f32eb8e/22UMGIM74128.rgb.jpg/486x486bb.png" class="mediaROUNDED" style="vertical-align: top; object-position: 50% 25%; width: 250px; height: 250px;">
+        </a> 
+        <p class="lol" style="position:absolute; margin-left: 778px;">Ado</p>
+        <p class="lol" style="position:absolute; margin-top: 20px; margin-left: 745px;"><strong>UTA'S SONGS</strong></p>
+        <p class="lol" style="position:absolute; margin-top: 40px; margin-left: 715px;"><strong>ONE PIECE FILM RED</strong></p>
+        <a href="https://music.apple.com/library/albums/l.HErhQyz"> 
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/Music125/v4/14/f9/47/14f947df-7650-dea0-a57b-15fce3eb53cb/190296654176.jpg/1200x1200bb.jpg" class="mediaROUNDED" style="vertical-align: top; object-position: 50% 25%; width: 250px; height: 250px;">
+        </a> 
+        <p class="lol" style="position:absolute; margin-left: 1010px;">Morgenshtern</p>
+        <p class="lol" style="position:absolute; margin-top: 20px; margin-left: 974px;"><strong>MILLION DOLLAR: BUSINESS</strong></p>
+        <a href="https://music.apple.com/library/albums/l.nxwcbSf"> 
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/52/5f/a2/525fa2bb-a85f-2ab7-ac9b-bcbaeb1d1740/190296669415.jpg/1200x1200bf-60.jpg" class="mediaROUNDED" style="vertical-align: top; object-position: 50% 25%; width: 250px; height: 250px;">
+        </a> 
+        <p class="lol" style="position:absolute; margin-left: 1290px;">Morgenshtern</p>
+        <p class="lol" style="position:absolute; margin-top: 20px; margin-left: 1235px;"><strong>MILLION DOLLAR: HAPPINESS</strong></p>
+        
+
+    </span>
+    <hr style="margin:auto; margin-top: 100px; width: 75%; opacity: 15%;">
+    <div style="margin-top: 30px">
+        <img style="float:left; margin-left: 100px; width: 180px; height: 180px;"; src="https://is4-ssl.mzstatic.com/image/thumb/Video115/v4/56/dc/0a/56dc0a5a-2d40-8c3a-a10e-a0fda1898b94/Job4aa95986-4595-4d7d-b439-07c0e2a679d6-124458662-PreviewImage_preview_image_nonvideo_sdr-Time1633041459287.png/540x540cc.webp">
+        <h2 style="float:left; margin-left: 50px;"><em>Today`s Hits</em><span><br><a href="https://music.apple.com/kz/playlist/todays-hits/pl.f4d106fed2bd41149aaacabb233eb5eb" style="margin-left: 50px;">Apple Music Hits</a></span></h2>
+        <div style="position: absolute; margin-left: 350px; margin-top: 80px;"><ol>
+            <li><a href="https://music.apple.com/kz/playlist/top-100-kazakhstan/pl.27d3c4d63b0e41f29f79c98bb5a090e1">Top 100 Kazakhstan</a></li>
+            <li><a href="https://music.apple.com/kz/playlist/rap-life/pl.abe8ba42278f4ef490e3a9fc5ec8e8c5">Rap Life</a></li>
+            <li><a href="https://music.apple.com/kz/playlist/2010s-rock-essentials/pl.9995d09520df40a497f4558e02947880">2010s Rock Essentials</a></li>
+            <li><a href="https://music.apple.com/kz/playlist/top-hits-run/pl.6db5f7b47286460e9928d09d9ac0be69">Top Hits Run</a></li>
+        </ol></div>
+        <table style="margin-right: 5%; margin-top: 10px; float: right;">
+            <thead>
+                <tr>
+                    <th scope="col"> Song </th>
+                    <th scope="col"> Artist </th>
+                    <th scope="col"> Album </th>
+                    <th scope="col"> Time </th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"> Eyes closed </th>
+                    <td> Ed Sheeran </td>
+                    <td> - (Deluxe) </td>
+                    <td> 3:14 </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Flowers </th>
+                    <td> Miley Cirus </td>
+                    <td> Endless Summer Vacation </td>
+                    <td> 3:20 </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Favorite Song </th>
+                    <td> Toosii </td>
+                    <td> Single </td>
+                    <td> 3:28 </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Kill Bill </th>
+                    <td> SZA </td>
+                    <td> SOS </td>
+                    <td> 2:33 </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Last Night </th>
+                    <td> Morgen Wallen </td>
+                    <td> One Thing At a Time </td>
+                    <td> 2:43 </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
